@@ -7,10 +7,8 @@ import subprocess
 
 parser = argparse.ArgumentParser(description='Start Mavproxy from local device to a specified remote device. Designed to be called via SSH from the GCS/receiving device. example copy/paste: python3 Start_Streaming.py -oH 11:11:11:11:11 -oTP 14550 -oVP 5600')
 parser.add_argument('-oH' ,'--outHOSTNAME'     , help='Hostname to send data to. Will auto strip colons from mac addresses', required=True)
-parser.add_argument('-oTP','--outtelemetryport', help='Output Port for telemetry (Default 14550)',
-     required=True)
-parser.add_argument('-oVP','--outvideoport'    , help='Output Port for video (Default 5600)',
-     required=True)
+parser.add_argument('-oTP','--outtelemetryport', help='Output Port for telemetry (Default 14550)',                           required=True)
+parser.add_argument('-oVP','--outvideoport'    , help='Output Port for video (Default 5600)',                                required=True)
 args = vars(parser.parse_args())
 
 # Format Hostname to include .local and strip colons if included

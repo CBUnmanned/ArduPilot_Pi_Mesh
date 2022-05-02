@@ -51,6 +51,6 @@ if currenthostname != newHostname:
     print("Changing Hostname to: " + newHostname)
     setHostname(newHostname)
     print("Rebooting to apply name change")
-    os.system("sudo reboot -n")
+    os.system("sudo reboot n")
 else:
     print("Hostname already set to: " + newHostname)

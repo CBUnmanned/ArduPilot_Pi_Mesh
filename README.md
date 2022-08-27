@@ -1,5 +1,5 @@
 # ArduPilot_Pi_Mesh
-BATMAN ADV implemented or Raspberry Pi's to forward MAVLINK
+BATMAN ADV implemented on Raspberry Pi's to forward MAVLINK
 
 Based off part 1 of this tutorial
 https://github.com/binnes/WiFiMeshRaspberryPi/blob/master/part1/PIMESH.md
